@@ -21,6 +21,7 @@ type SitemapIndex struct {
 // NewSitemapIndex returns new SitemapIndex.
 func NewSitemapIndex() *SitemapIndex {
 	return &SitemapIndex{
-		XMLNS: XMLNS,
+		XMLNS:   XMLNS,
+		Sitemap: []*URLSitemapIndex{},
 	}
 }

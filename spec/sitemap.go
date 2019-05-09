@@ -24,5 +24,6 @@ type Sitemap struct {
 func NewSitemap() *Sitemap {
 	return &Sitemap{
 		XMLNS: XMLNS,
+		URL:   []*URLSitemap{},
 	}
 }
