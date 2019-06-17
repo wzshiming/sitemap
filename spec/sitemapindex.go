@@ -2,13 +2,12 @@ package spec
 
 import (
 	"encoding/xml"
-	"time"
 )
 
 // URLSitemapIndex entry in sitemap index.
 type URLSitemapIndex struct {
-	Loc     string     `xml:"loc"`
-	LastMod *time.Time `xml:"lastmod,omitempty"`
+	Loc     string `xml:"loc"`
+	LastMod string `xml:"lastmod,omitempty"`
 }
 
 // SitemapIndex is like Sitemap except the elements are named differently.

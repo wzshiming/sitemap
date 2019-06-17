@@ -2,13 +2,12 @@ package spec
 
 import (
 	"encoding/xml"
-	"time"
 )
 
 // URLSitemap entry in sitemap.
 type URLSitemap struct {
 	Loc        string     `xml:"loc"`
-	LastMod    *time.Time `xml:"lastmod,omitempty"`
+	LastMod    string     `xml:"lastmod,omitempty"`
 	ChangeFreq ChangeFreq `xml:"changefreq,omitempty"`
 	Priority   float32    `xml:"priority,omitempty"`
 }
